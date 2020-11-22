@@ -1,3 +1,62 @@
+11.0.3.6.4 (2020-11-05)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Features**
+
+- The drilldown action name displayed on the breadcrumb has been revised.
+  The kpi description and the account ``display_name`` are shown instead
+  of the kpi's technical definition. (`#304 <https://github.com/OCA/mis-builder/issues/304>`_)
+
+
+11.0.3.6.3 (2020-08-28)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- Having a "Compare columns" added on a KPI with an associated style using a
+  Factor/Divider did lead to the said factor being applied on the percentages
+  when exporting to XLSX. (`#300 <https://github.com/OCA/mis-builder/issues/300>`_)
+
+
+**Misc**
+
+- `#280 <https://github.com/OCA/mis-builder/issues/280>`_, `#296 <https://github.com/OCA/mis-builder/issues/296>`_
+
+
+11.0.3.6.2 (2020-04-22)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- The "Settings" button is now displayed for users with the "Show full accounting features" right when previewing a report. (`#281 <https://github.com/OCA/mis-builder/issues/281>`_)
+
+
+11.0.3.6.1 (2020-04-22)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- Fix ``TypeError: 'module' object is not iterable`` when using
+  budgets by account. (`#276 <https://github.com/OCA/mis-builder/issues/276>`_)
+
+
+11.0.3.6.0 (2020-03-28)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Features**
+
+- Add column-level filters on analytic account and analytic tags.
+  These filters are combined with a AND with the report-level filters
+  and cannot be modified in the preview. (`#138 <https://github.com/OCA/mis-builder/issues/138>`_)
+- Access to KPI from other reports in KPI expressions, aka subreports. In a
+  report template, one can list named "subreports" (other report templates). When
+  evaluating expressions, you can access KPI's of subreports with a dot-prefix
+  notation. Example: you can define a MIS Report for a "Balance Sheet", and then
+  have another MIS Report "Balance Sheet Ratios" that fetches KPI's from "Balance
+  Sheet" to create new KPI's for the ratios (e.g. balance_sheet.current_assets /
+  balance_sheet.total_assets). (`#155 <https://github.com/OCA/mis-builder/issues/155>`_)
+
+
 11.0.3.5.0 (2019-10-26)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
